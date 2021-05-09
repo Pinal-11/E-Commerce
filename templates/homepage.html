@@ -1,0 +1,622 @@
+{% load static %}
+{% static 'images/site_images/' as banners %}
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+
+<style type="text/css">
+
+.button1
+{
+position:relative;;
+top:-500px;
+left:345px;
+padding:15px 45px 15px 45px;
+background:#fff;
+border:none;
+color:#333333;
+}
+.button1:hover
+{
+background:red;
+border:none;
+color:#ffffff;
+}
+.button2
+{
+position:relative;;
+top:-620px;
+left:525px;
+padding:15px 45px 15px 45px;
+background:#fff;
+border:none;
+color:#333333;
+}
+.button2:hover
+{
+background:red;
+border:none;
+color:#ffffff;
+}
+.button3
+{
+position:relative;;
+top:-500px;
+left:715px;
+padding:15px 45px 15px 45px;
+background:#fff;
+border:none;
+color:#333333;
+}
+.button3:hover
+{
+background:red;
+border:none;
+color:#ffffff;
+}
+.button4
+{
+position:relative;
+top:-190px;
+left:-115px;
+padding:15px 45px 15px 45px;
+background:#fff;
+border:none;
+color:#333333;
+}
+.button4:hover
+{
+background:red;
+border:none;
+color:#ffffff;
+}
+.button5
+{
+position:relative;;
+top:-190px;
+left:45px;
+padding:15px 45px 15px 45px;
+background:#fff;
+border:none;
+color:#333333;
+}
+.button5:hover
+{
+background:red;
+border:none;
+color:#ffffff;
+}
+.signup
+{
+background-color:black;
+color:white;
+font: 18px montserrat,sans-serif;
+text-decoration:none;
+padding:10px 20px 10px 20px;
+margin-left:0px;
+}
+.signup:hover
+{
+background:red;
+border:none;
+color:#ffffff;
+}
+footer
+{
+width:100%;
+height:300px;
+background-color:darkblue;
+color:white;
+position:relative;
+top:0px;
+}
+footer table
+{
+padding-top:40px;
+padding-left:40px;
+}
+a.navigate,a.categories
+{
+font: 14px montserrat,sans-serif;
+color:#BDC3C7;
+line-height:30px;
+position:relative;
+text-decoration:none;
+left:20px;
+top:10px;
+bottom: 10px;
+text-indent:10px;
+}
+b.navigate,b.categories
+{
+font: 16px montserrat,sans-serif;
+color:white;
+position:relative;
+left:7px;
+top:-5px;
+padding-top:10px;
+}
+a.navigate:hover,a.categories:hover,b.navigate:hover,b.categories:hover
+{
+color:red;
+}
+#t1,#t2
+{
+float:left;
+padding-left:80px;
+}
+.site-footer
+{
+background-color:#26272b;
+padding:45px 0 20px;
+font-size:15px;
+line-height:24px;
+color:#737373;
+}
+.site-footer hr
+{
+border-top-color:#bbb;
+opacity:0.5
+}
+.site-footer hr.small
+{
+margin:20px 0
+}
+.site-footer h6
+{
+color:#fff;
+font-size:16px;
+text-transform:uppercase;
+margin-top:5px;
+letter-spacing:2px
+}
+.site-footer a
+{
+color:#737373;
+}
+.site-footer a:hover
+{
+color:red;
+text-decoration:none;
+}
+.footer-links
+{
+padding-left:10;
+list-style:none
+}
+.footer-links li
+{
+display:block
+}
+.footer-links a
+{
+color:white;
+}
+.footer-links a:active,.footer-links a:focus,.footer-links a:hover
+{
+color:cyan;
+text-decoration:none;
+}
+.footer-links.inline li
+{
+display:inline-block
+}
+.site-footer .social-icons
+{
+text-align:right
+}
+.site-footer .social-icons a
+{
+width:40px;
+height:40px;
+line-height:40px;
+margin-left:6px;
+margin-right:20;
+border-radius:100%;
+background-color:#33353d;
+}
+.copyright-text
+{
+margin:0
+}
+@media (max-width:991px)
+{
+.site-footer [class^=col-]
+{
+margin-bottom:30px
+}
+}
+@media (max-width:767px)
+{
+.site-footer
+{
+padding-bottom:0
+}
+.site-footer .copyright-text,.site-footer
+{
+text-align:center
+}
+}
+footer{
+overflow:hidden;
+height:280px;
+margin-bottom:5px;
+}
+#p1,#p2,#p3{
+font: 20px montserrat;
+color:white;
+display:inline;
+padding:20px 100px 0px 90px;
+}
+.footer_img{
+margin-right:60px;
+margin-left:60px;
+}
+.panel-heading
+{
+background-color:#275FB4;
+color:white;
+}
+.panel-footer a
+{
+color:black;
+text-decoration:none;
+}
+.panel-footer:hover
+{
+background-color:white;
+color:black;
+text-align:center;
+text-decoration:none;
+}
+.img-thumbnail
+{
+margin-left:40px;
+}
+.img-thumbnail:hover
+{
+   transform: scale(1.1);
+}
+.col-sm-4:hover
+{
+   transform: scale(1.1);
+}
+</style>
+</head>
+<body>
+
+<!-- menu -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href=''>E SHOP</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href=''>Home</a></li>
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Electronics
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="electronics/mobiles">Mobiles</a></li>
+ <li><a href="electronics/laptops">Laptops</a></li>
+ <li><a href="electronics/speakers">Speakers</a></li>
+ <li><a href="electronics/cameras">Cameras</a></li>
+        </ul>
+      </li>
+
+ <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">TVs & Appliances
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="appliances/television">Television</a></li>
+ <li><a href="appliances/air_conditioners">AC & coolers</a></li>
+ <li><a href="appliances/refrigerator">Refrigerators</a></li>
+ <li><a href="appliances/washing_machines">Washing Machines</a></li>
+        </ul>
+      </li>
+
+ <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Mens
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="mens/indian_festive_wear">Indian & Festive Wear</a></li>
+  <li><a href="mens/topwear">TopWear</a></li>
+ <li><a href="mens/footwear">Footwear</a></li>
+        </ul>
+      </li>
+
+ <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Womens
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="womens/indian_wear">Indian & Fusion Wear</a></li>
+ <li><a href="womens/western_wear">Western Wear</a></li>
+ <li><a href="womens/womens_footwear">Footwear</a></li>
+        </ul>
+      </li>
+
+ <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Kids
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="kids/boys_clothing">Boys Clothing</a></li>
+ <li><a href="kids/girls_clothing">Girls Clothing</a></li>
+ <li><a href="kids/boys_footwear">Boys Footwear</a></li>
+ <li><a href="kids/girls_footwear">Girls Footwear</a></li>
+        </ul>
+      </li>
+
+ <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Home & Furniture
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="homedecor/decor">Home Decor</a></li>
+ <li><a href="homedecor/kitchen">Kitchen Aplliances</a></li>
+ <li><a href="homedecor/furniture">Furniture</a></li>
+        </ul>
+      </li>
+
+      <li><a href="about">About Us</a></li>
+
+ <li>
+<form class="navbar-form navbar-left" action="search">
+<div class="input-group">
+<input type="text" name="query" id="query" class="form-control" placeholder="Search" required="required">
+<div class="input-group-btn">
+<button class="btn btn-default" type="submit"><i class="glyphicon glyphicon-search"></i></button>
+</div>
+</div>
+</form>
+</li>
+    </ul>
+
+<ul class="nav navbar-nav navbar-right">
+{% if not user.is_authenticated %}
+      <li><a href="accounts/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="accounts/login"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    {% endif %}
+    </ul>
+
+<ul class="nav navbar-nav navbar-right">
+{% if request.user.is_superuser and user.is_authenticated %}
+      <li><a href="accounts/logout"><span class="glyphicon glyphicon-user"></span> Logout</a></li>
+    {% endif %}
+    </ul>
+
+<ul class="nav navbar-nav navbar-right">
+{% if not request.user.is_superuser and user.is_authenticated %}
+ <li><a href="accounts/logout"><span class="glyphicon glyphicon-user"></span> Welcome {{user.first_name}}</a></li>
+ <li><a href="accounts/logout"><span class="glyphicon glyphicon-log-in"></span> Logout</a></li>
+    {% endif %}
+    </ul>
+
+  </div>
+</nav>
+
+
+<marquee><h2>Brand New Arrivals</h2></marquee><br>
+
+<div class="container">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <a href=""><li data-target="#myCarousel" data-slide-to="0" class="active"></li></a>
+      <a href=""><li data-target="#myCarousel" data-slide-to="1"></li></a>
+      <a href=""><li data-target="#myCarousel" data-slide-to="2"></li></a>
+ <a href=""><li data-target="#myCarousel" data-slide-to="3"></li></a>
+ <a href=""><li data-target="#myCarousel" data-slide-to="4"></li></a>
+ <a href=""><li data-target="#myCarousel" data-slide-to="5"></li></a>
+ <a href=""><li data-target="#myCarousel" data-slide-to="6"></li></a>
+ <a href=""><li data-target="#myCarousel" data-slide-to="7"></li></a>
+
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner">
+      <div class="item active">
+        <img src="{{banners}}/ban1.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="item">
+        <img src="{{banners}}/ban2.jpg" style="width:100%; height:500px;">
+      </div>
+
+      <div class="item">
+        <img src="{{banners}}/ban3.jpg" style="width:100%; height:500px;">
+      </div>
+
+ <div class="item">
+        <img src="{{banners}}/ban4.jpg" style="width:100%; height:500px;">
+      </div>
+
+ <div class="item">
+        <img src="{{banners}}/ban5.jpg" style="width:100%; height:500px;">
+      </div>
+
+ <div class="item">
+        <img src="{{banners}}/ban6.jpg" style="width:100%; height:500px;">
+      </div>
+
+ <div class="item">
+        <img src="{{banners}}/ban7.jpg" style="width:100%; height:500px;">
+      </div>
+
+  <div class="item">
+        <img src="{{banners}}/ban8.jpg" style="width:100%; height:500px;">
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+<br><br>
+
+<marquee><h2>Latest Trands & Collections</h2></marquee><br>
+<a href="womens/indian_wear"><img src="{{banners}}/img1.jpg" class="img-thumbnail" style="width:250px; background-color:#F1948A"></a>
+<a href="womens/tops_tshirts_shirts"><img src="{{banners}}/img2.jpg" class="img-thumbnail" style="width:250px; background-color:#ABE5DC"></a>
+<a href="mens/topwear"><img src="{{banners}}/img3.jpg" class="img-thumbnail" style="width:250px; background-color:#F1C40F"></a>
+<a href="womens/womens_footwear"><img src="{{banners}}/img4.jpg" class="img-thumbnail" style="width:250px; background-color:#F5CBA7"></a>
+<a href="mens/topwear"><img src="{{banners}}/img5.jpg" class="img-thumbnail" style="width:250px; background-color:#5DADE2"></a>
+<br><br><br><br>
+
+<div style="background:#D6EAF8;"><br>
+<!--advertising row1-->
+<div class="container">
+    <div class="col-sm-4">
+  <div class="row">
+
+      <div class="panel panel-primary">
+        <div class="panel-heading">Brand New Arrivals</div>
+        <div class="panel-body"><a href="electronics/mobiles"><img src="{{banners}}/banner1.jpg" class="img-responsive" style="width:400px; height:200px;" alt="Image"></a></div>
+        <div class="panel-footer"><a href="electronics/mobiles">+EXPLORE</a></div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Brand New Arrivals</div>
+        <div class="panel-body"><a href="electronics/mobiles"><img src="{{banners}}/banner2.jpg" class="img-responsive" style="width:400px; height:200px;" alt="Image"></a></div>
+        <div class="panel-footer"><a href="electronics/mobiles">+EXPLORE</div></a>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Brand New Arrivals</div>
+        <div class="panel-body"><a href="womens/western_wear"><img src="{{banners}}/banner3.png" class="img-responsive" style="width:400px; height:200px;" alt="Image"></a></div>
+        <div class="panel-footer"><a href="womens/western_wear">+EXPLORE</div></a>
+      </div>
+    </div>
+
+  </div>
+</div>
+</div><br><br><br><br>
+
+<div style="background:#D6EAF8;"><br>
+<!--advertising row2-->
+
+  <div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Brand New Arrivals</div>
+        <div class="panel-body"><a href="mens/topwear"><img src="{{banners}}/banner4.jpg" class="img-responsive" style="width:400px; height:200px;" alt="Image"></a></div>
+        <div class="panel-footer"><a href="mens/topwear">+EXPLORE</a></div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Brand New Arrivals</div>
+        <div class="panel-body"><a href="electronics/cameras"><img src="{{banners}}/banner5.jpg" class="img-responsive" style="width:400px; height:200px;" alt="Image"></a></div>
+        <div class="panel-footer"><a href="electronics/cameras">+EXPLORE</a></div>
+      </div>
+    </div>
+
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Brand New Arrivals</div>
+        <div class="panel-body"><a href="electronics/speakers"><img src="{{banners}}/banner6.jpg" class="img-responsive" style="width:400px; height:200px;" alt="Image"></a></div>
+        <div class="panel-footer"><a href="electronics/speakers">+EXPLORE</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div><br><br><br><br>
+
+<div style="background:#D6EAF8;"><br>
+<!--advertising row3-->
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Brand New Arrivals</div>
+        <div class="panel-body"><a href="appliances/television"><img src="{{banners}}/banner7.jpg" class="img-responsive" style="width:400px; height:200px;" alt="Image"><a></div>
+        <div class="panel-footer"><a href="appliances/television">+EXPLORE</a></div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Brand New Arrivals</div>
+        <div class="panel-body"><a href="electronics/laptops"><img src="{{banners}}/banner8.jpg" class="img-responsive" style="width:400px; height:200px;" alt="Image"></a></div>
+        <div class="panel-footer"><a href="electronics/laptops">+EXPLORE</a></div>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="panel panel-primary">
+        <div class="panel-heading">Brand New Arrivals</div>
+        <div class="panel-body"><a href="mens/footwear"><img src="{{banners}}/banner9.jpg" class="img-responsive" style="width:400px; height:200px;" alt="Image"></a></div>
+        <div class="panel-footer"><a href="mens/footwear">+EXPLORE</a></div>
+      </div>
+    </div>
+  </div>
+</div>
+</div><br><br>
+
+  <!-- Site footer -->
+<footer class="site-footer">
+<div class="row">
+<div class="col-sm-6">
+<h6 style="padding-left:195px;">About Us</h6>
+<img class="footer_img" src="{% static 'images/Pinal-resume.png' %}" alt="" style="width:120px;height:130px;border-radius:20px;">
+<img class="footer_img" src="{% static 'images/p2.jpg' %}" alt="" style="width:120px;height:130px;border-radius:20px;"><br>
+<h2 id="p1">Pinal</h2>
+<h2 id="p2">Pratik</h2><br>
+<div><p style="color:white;padding-left:57px">copyright &copy; 2020 : All Rights Reserved By Pratik & Pinal</p></div>
+</div>
+
+<div class="col-sm-6">
+<h6>Categories</h6>
+<ul class="footer-links"style="color:white;" >
+<li><a href="mens/topwear">Men's Fashion</a></li>
+<li><a href="womens/indian_wear">women's Fashion</a></li>
+<li><a href="kids/girls_clothing">Kid's Fashion</a></li>
+<li><a href="mens/footwear">men's footwear</a></li>
+<li><a href="womens/womens_footwear">women's footwear</a></li>
+<li><a href="kids/boys_footwear">kid's footwear</a></li>
+</ul>
+</div>
+</div>
+</footer>
+</body>
+<script>
+  $( function() {
+    var availableTags = [
+
+ "boys clothing","boys shirts","boys t-shirts","boys sneakers","boys sandals",
+ "girls clothing","girls tops","girls dresses","girls tshirts","girls flats",
+ "washing machine","samsung washing machine","LG washing machine","Onida washing machine","IFB washing machine",
+ "Television","ADSUN Television","Mi Television","LG Television","Motorola Television","Thomson Television",
+ "Refrigerator","Samsung Refrigerator","Whirlpool Refrigerator","LG Refrigerator",
+ "Cooler","Air conditioners","Hindware Cooler","Orient Cooler","Onida Air conditioners","Hitachi Air conditioners","Whirlpool Air conditioners",
+ "laptops","Apple laptops","Asus laptops","HP laptops","Acer laptops",
+ "Cameras","sony cameras","nikon cameras","canon cameras",
+ "Speakers","jbl speakers","intex speakers","boat speakers",
+ "Mobiles","mi mobiles","realme mobiles",
+ "Decorations","wall Decorations","home furniture","book shelf","box beds",
+ "casual shoes","men's footwear","men's indian & festive wear","men's kurtas","men's topwear","men's shirts",
+ "heels","women's western wear","women's footwear","mojaris","women's sandals","flats","women's sneakers","kurtaset","sarees","lehengas",
+    ];
+    $( "#query" ).autocomplete({
+      source: availableTags
+    });
+  } );
+</script>
+</html>

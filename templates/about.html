@@ -1,0 +1,71 @@
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title> team-section</title>
+    <style>
+    .team-section
+    {
+        overflow: hidden;
+        padding: 60px;
+        text-align: center;
+        background: #34495e;
+        height: 100%;
+    }
+
+    .team-section h1
+    {
+        text-transform: uppercase;
+        color: white;
+        margin-bottom: 60px;
+        font-size: 40px;
+        font-family:arial;
+    }
+    .border
+    {
+        display: block;
+        margin: auto;
+        width: 200px;
+        height: 3px;
+        background: #3498db;
+        margin-bottom: 40px;
+    }
+    img
+    {
+        display: inline;
+        margin: 0 20px;
+        height: 200px;
+        width: 175px;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    h2#p1
+    {
+        display:inline;
+        color:white;
+        position:relative;
+        left:-75px;
+    }
+    h2#p2
+    {
+        display:inline;
+        color:white;
+        position:relative;
+        left:85px;
+    }
+    </style>
+</head>
+<body>
+	<div class="team-section">
+		<h1>Our Team</h1>
+		<span class="border"></span>
+		<div class="img">
+			<img src="{% static 'images/Pinal-resume.png' %}" alt="">
+			<img src="{% static 'images/p2.jpg' %}" alt="">
+            <br>
+            <h2 id="p1">Pinal</h2>
+            <h2 id="p2">Pratik</h2>
+		</div>
+    </div>
+</body>
+</html>

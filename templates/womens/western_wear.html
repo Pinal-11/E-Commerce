@@ -1,0 +1,114 @@
+{% load static %}
+{% static 'images/site_images/womens/kurtas' as baseurl %}
+<html>
+<head>
+    <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
+
+<style>
+
+img
+{
+    width:250px;
+    height:330px; 
+    border: 2px solid #fff;
+    display: block;
+}
+img:hover 
+{
+  transform: scaleX(-1);
+}
+.card
+{
+  float:left;
+  margin-left:40px;
+  margin-bottom:10px;
+  margin-top:10px;
+  height:425px;
+}
+.card:hover
+{
+  box-shadow: 0 3px 15px rgba(0,0,0,0.7);
+}
+.btn-primary
+{
+  background-color:#FC3DA3;
+  border-radius:0;
+  border:none;
+}
+.card-body {
+  position: absolute;
+  background:#f5f5f5;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height:95px;
+  overflow: hidden;
+  width: 100%;
+  transition: .5s ease;
+}
+.card:hover .card-body {
+  height: 50%;
+}
+.card-text
+{
+  font:15px Montserrat grey;
+}
+</style>
+</head>
+
+<body>
+<br>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">Western Wear</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+      <a class="nav-item nav-link active" href="western_wear" style="color: white;">Home</a>
+      <a class="nav-item nav-link" href="dresses_jumpsuits" style="color: white;">dresses & Jumpsuits</a>
+      <a class="nav-item nav-link" href="tops_tshirts_shirts" style="color: white;">Tops, Tshirts & shirts</a>
+      <a class="nav-item nav-link" href="shrugs_jackets" style="color: white;">Shrugs & Jackets</a>
+      
+    </div>
+  </div>
+</nav><br>
+
+<div style="display:inline">
+<form method="POST" action="sort_By">
+{% csrf_token %}
+
+  <input type="radio" name="western_price_filter_desc">
+  <label><b>Price: High to Low </b></label>
+
+  <input type="radio" name="western_price_filter_asc">
+  <label><b>Price: Low to High </b></label>
+
+  <input type="radio" name="western_special_offer">
+  <label><b>special Offers </b></label>
+
+  <button type="submit">GO</button>
+</form>
+</div><hr>
+
+{% for wes in query_set_western %}
+<div class="card" style="width: 16rem;">
+    <img class="card-img-top" src="{{wes.image.url}}" alt="product-Image">
+
+    <div class="card-body">
+      <h5 class="card-title">{{wes.name}}</h5>
+      <p class="card-text">{{wes.desc}}</p>
+      <h5 class="card-title">Rs. {{wes.price}}/-</h5>
+      <a href="#" class="btn btn-primary">ADD TO CART</a><br>
+      {%  if wes.offer %}
+        <a class="special-Offer" href="#">Special Offer</a>
+      {%  endif %}
+    </div>
+</div>
+{% endfor %}
+</body>
+</html>
